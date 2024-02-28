@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasy Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+  />
+  <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" 
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body id="home">
+
+  <!-- Heading navbar-->
+  <header class="heading">
+    <nav class="navbar navbar-expand bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Fantasy Store</a>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-grow-1 flex-lg-row justify-content-end">
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#shop">Shop</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Display Image -->
+  <img src="background.jpg" class="img-fluid" alt="discount-img"/>
+
+  <!-- Product cards -->
+  <div class="card-container" id="shop">
+    <div class="card" style="width: 18rem;" id="watch1">
+      <img src="1.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Shirts</h5>
+        <p class="card-text">From crisp classics to contemporary styles, our Shirts collection offers the perfect balance of sophistication and comfort.</p>
+        <h4 class="cost">₹2759</h4>
+        <div class="cart-btn-div">
+          <button
+            type="button"
+            class="btn btn-primary cart-btn add-to-cart"
+            data-name="Shirts"
+            data-price="₹2759/-"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="watch2">
+      <img src="2.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">T-shirts</h5>
+        <p class="card-text">Discover the perfect blend of style and comfort with our collection of T-shirts, designed for everyday wear.</p>
+        <h4 class="cost">₹1039</h4>
+        <div class="cart-btn-div">
+          <button
+            type="button"
+            class="btn btn-primary cart-btn add-to-cart"
+            data-name="T-shirts"
+            data-price="₹1039/-"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="watch3">
+      <img src="3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Shirt-Jacket</h5>
+        <p class="card-text">Embrace effortless style with our versatile Shirt-Jackets, combining the best of shirts and jackets for a contemporary look.</p>
+        <h4 class="cost">₹999</h4>
+        <div class="cart-btn-div">
+          <button
+            type="button"
+            class="btn btn-primary cart-btn add-to-cart"
+            data-name="Shirt-Jacket"
+            data-price="₹999/-"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="watch4">
+      <img src="4.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Shirts Half-Sleeves</h5>
+        <p class="card-text">Stay cool and stylish with our collection of half-sleeve shirts, perfect for a casual yet polished look.</p>
+        <h4 class="cost">₹1994</h4>
+        <div class="cart-btn-div">
+          <button
+            type="button"
+            class="btn btn-primary cart-btn add-to-cart"
+            data-name="Shirts Half-Sleeves"
+            data-price="₹1994/-"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="watch5">
+      <img src="5.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pants</h5>
+        <p class="card-text">Elevate your look with our range of Pants, designed for both style and comfort, perfect for any occasion.
+        </p>
+        <h4 class="cost">₹1999</h4>
+        <div class="cart-btn-div">
+          <button
+            type="button"
+            class="btn btn-primary cart-btn add-to-cart"
+            data-name="Pants"
+            data-price="₹1999/-"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="watch6">
+      <img src="6.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kurtas</h5>
+        <p class="card-text"> Experience elegance and tradition with our collection of Kurtas, crafted with exquisite fabrics and timeless designs.</p>
+        <h4 class="cost">₹1500</h4>
+        <div class="cart-btn-div">
+          <button
+            type="button"
+            class="btn btn-primary cart-btn add-to-cart"
+            data-name="Kurtas"
+            data-price="₹1500/-"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+   <!-- Cart -->
+    <div class="card cart-card">
+      <div class="card-body">
+        <h1 class="card-title">
+          Your Cart <i class="fa-solid fa-cart-shopping"></i>
+        </h1>
+        <hr />
+        <div id="cart">
+          <h3 id="cart-empty-message">Cart is empty</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="card text-center about-card" id="about">
+      <div class="card-body about-card-body" style="height: 13rem">
+        <h5 class="card-title">About</h5>
+        <hr />
+        <p class="card-text">
+          Our clothing website is dedicated to offering a curated selection of branded clothes, 
+          including pants, shirts, t-shirts, and kurtas from renowned brands such as Allen Solly, 
+          Tommy Hilfiger, US Polo, and more. We strive to provide our customers with high-quality, 
+          stylish clothing that reflects the latest fashion trends while maintaining comfort and affordability.
+          Explore our collection and elevate your wardrobe with premium branded apparel.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer " id="contact">
+      <div class="socials">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <div class="brand"> &copy; Fantasy Store</div>
+      <div class="links">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </div>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
